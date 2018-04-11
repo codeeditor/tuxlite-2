@@ -21,28 +21,16 @@ The following are installed:-
 -   Postfix mail server (securely configured to be outgoing only)
 -   Varnish cache (optional)
 
-For more detailed explanation on the installation, usage and script features, 
-kindly refer to these links:-
-
-[Installation](http://tuxlite.com/installation/)
-
-[Script features](http://tuxlite.com/script-details/)
-
-[Download](http://tuxlite.com/download/)
-
 ### Quick Install (Git)
 
     # Install git and clone TuxLite
-    aptitude install git
-    git clone https://github.com/Mins/TuxLite.git
-    cd TuxLite
+    apt-get update && aptitude install git && git clone https://github.com/rianawb/tuxLite.git && cd TuxLite
     
     # Edit options to enter server IP, MySQL password etc.
     nano options.conf
     
     # Make all scripts executable.
-    chmod 700 *.sh
-    chmod 700 options.conf
+    chmod 700 *.sh sudo chmod 700 options.conf
     
     # Install LAMP or LNMP stack.
     ./install.sh
