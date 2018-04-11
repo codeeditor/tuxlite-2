@@ -30,7 +30,7 @@ The following are installed:-
     nano options.conf
     
     # Make all scripts executable.
-    chmod 700 *.sh sudo chmod 700 options.conf
+    chmod 700 *.sh && chmod 700 options.conf
     
     # Install LAMP or LNMP stack.
     ./install.sh
